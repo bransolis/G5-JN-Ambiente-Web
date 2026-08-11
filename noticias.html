@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Noticias Ecológicas – REUSE</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dashboard sticky-top">
+
+    <div class="container-fluid px-4">
+
+      <a class="navbar-brand brand" href="index.php">
+        <img src="reuselogo.png" alt="REUSE">
+      </a>
+
+      <div class="collapse navbar-collapse">
+
+        <ul class="navbar-nav mx-auto gap-2">
+
+          <li class="nav-item">
+            <a class="nav-link" href="panel.php">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="CentroAcopio.html">Centro de acopio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="noticias.html">Noticias</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="voluntariados.html">Voluntariados</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="recompensas.php">Recompensas</a>
+          </li>
+
+        </ul>
+
+        <div class="d-flex align-items-center gap-3 ms-auto">
+
+          <i class="bi bi-bell fs-5"></i>
+          <i class="bi bi-box-arrow-right fs-5"></i>
+
+          <div class="dropdown">
+
+            <button
+              class="btn btn-sm dropdown-toggle d-flex align-items-center gap-1"
+              data-bs-toggle="dropdown"
+              style="background: transparent; border: 1px solid #ccc; border-radius: 8px; font-size: .85rem;">
+
+              <i class="bi bi-person-circle"></i>
+              @usuario
+
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+
+              <li>
+                <a class="dropdown-item" href="perfil.php">
+                  Mi perfil
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="#">
+                  Configuración
+                </a>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="api/logout.php">
+                  Cerrar sesión
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <main class="noticias-contenido">
+
+    <div class="perfil-ruta">
+
+      <a href="panel.php">Inicio</a>
+
+      <i class="bi bi-chevron-right"></i>
+
+      <span>Noticias</span>
+
+    </div>
+
+
+    <div class="noticias-encabezado">
+
+      <div>
+        <h1 class="noticias-titulo">
+          Noticias Ecológicas
+        </h1>
+
+        <p class="noticias-descripcion">
+          Entérate de lo último en medio ambiente
+        </p>
+      </div>
+
+      <div class="filtros-noticias">
+        <button class="filtro-btn activo" data-filtro="todas">Todas</button>
+        <button class="filtro-btn" data-filtro="consejos">Consejos</button>
+        <button class="filtro-btn" data-filtro="reciclaje">Reciclaje</button>
+        <button class="filtro-btn" data-filtro="ambiente">Ambiente</button>
+      </div>
+
+    </div>
+
+
+    <section class="lista-noticias">
+
+      <article class="noticia-tarjeta" data-categoria="consejos">
+
+        <div class="noticia-imagen">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Material_recovery_facility_2004-03-24.jpg"
+            alt="Planta de reciclaje">
+        </div>
+
+        <div class="noticia-info">
+          <h3>Como reciclar plastico correctamente en Costa Rica</h3>
+          <p>12 de Mayo 2026 - Consejos</p>
+        </div>
+
+        <button class="boton-ver-noticia">
+          Ver más
+        </button>
+
+      </article>
+
+
+      <article class="noticia-tarjeta" data-categoria="consejos">
+
+        <div class="noticia-imagen">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Colorful_Recycling_Containers_for_Trash.jpg"
+            alt="Contenedores de reciclaje en un parque">
+        </div>
+
+        <div class="noticia-info">
+          <h3>5 Formas de reducir tu huella ecologica diariamente</h3>
+          <p>9 de Mayo 2026 - Consejos</p>
+        </div>
+
+        <button class="boton-ver-noticia">
+          Ver más
+        </button>
+
+      </article>
+
+
+      <article class="noticia-tarjeta" data-categoria="ambiente">
+
+        <div class="noticia-imagen">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Water_Pollution_with_Trash_Disposal_of_Waste_at_the_Garbage_Beach.jpg"
+            alt="Plastico en el mar">
+        </div>
+
+        <div class="noticia-info">
+          <h3>La contaminiacion de plastico en nuestros mares</h3>
+          <p>7 de Junio 2026 - Ambiente</p>
+        </div>
+
+        <button class="boton-ver-noticia">
+          Ver más
+        </button>
+
+      </article>
+
+    </section>
+
+
+    <button class="boton-ver-mas">
+      Ver más noticias
+    </button>
+
+  </main>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <script>
+    const botonesFiltro = document.querySelectorAll('.filtro-btn');
+    const tarjetasNoticias = document.querySelectorAll('.noticia-tarjeta');
+
+    botonesFiltro.forEach(boton => {
+      boton.addEventListener('click', () => {
+        botonesFiltro.forEach(b => b.classList.remove('activo'));
+        boton.classList.add('activo');
+
+        const filtro = boton.dataset.filtro;
+
+        tarjetasNoticias.forEach(tarjeta => {
+          if (filtro === 'todas' || tarjeta.dataset.categoria === filtro) {
+            tarjeta.style.display = 'flex';
+          } else {
+            tarjeta.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
