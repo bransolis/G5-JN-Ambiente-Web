@@ -115,3 +115,23 @@ CREATE TABLE IF NOT EXISTS historial_canjes (
     ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- ---------------------------------------------------------------------
+-- Tabla: centros_acopio
+-- ---------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS centros_acopio (
+  id              INT AUTO_INCREMENT PRIMARY KEY,
+  nombre          VARCHAR(120) NOT NULL,
+  direccion       VARCHAR(255) NOT NULL,
+  distancia_km    DECIMAL(5,2) NOT NULL DEFAULT 0,
+  materiales      VARCHAR(255) NOT NULL,
+  UNIQUE KEY uq_centro_nombre (nombre)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT IGNORE INTO centros_acopio (nombre, direccion, distancia_km, materiales) VALUES
+  ('Cento Verde Heredia', 'Heredia Centro, 200 metros norte del parque central', 1.20, 'Plastico,Papel'),
+  ('EcoPunto San Jose', 'Barrio escalante, 100 metros norte de la iglesia', 2.40, 'Plastico,Papel,Vidrio'),
+  ('Reciclaje Alajuela', 'Alajuela centro, costado oeste del parque central', 8.70, 'Plastico,Papel,Vidrio,Metal'),
+  ('Centro de Acopio Cartago', 'Cartago centro, 150 metros sur de la Basílica', 11.30, 'Plastico,Vidrio,Metal'),
+  ('EcoRecicla Escazú', 'Escazú centro, frente al parque', 6.50, 'Plastico,Papel'),
+  ('Punto Verde Curridabat', 'Curridabat, 300 metros este de la iglesia', 4.80, 'Papel,Vidrio,Metal');
+

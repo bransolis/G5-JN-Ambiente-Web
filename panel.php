@@ -76,7 +76,7 @@ $paginaActiva = 'panel';
         </a>
       </div>
       <div class="col-6 col-md-4">
-        <a href="CentroAcopio.html" class="access-card">
+        <a href="CentroAcopio.php" class="access-card">
           <div class="ac-icon">📍</div>
           <h6>Centros de acopio</h6>
           <p>Encuentra lugares de reciclaje cercanos.</p>

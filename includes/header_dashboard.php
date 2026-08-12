@@ -12,7 +12,7 @@ function navActiva(string $clave, string $activa): string {
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mx-auto gap-2">
         <li class="nav-item"><a class="nav-link" href="panel.php">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="CentroAcopio.html">Centro de acopio</a></li>
+        <li class="nav-item"><a class="nav-link" href="CentroAcopio.php">Centro de acopio</a></li>
         <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
         <li class="nav-item"><a class="nav-link" href="voluntariados.html">Voluntariados</a></li>
         <li class="nav-item"><a class="nav-link" href="recompensas.php">Recompensas</a></li>
@@ -44,7 +44,7 @@ function navActiva(string $clave, string $activa): string {
       <a class="nav-link <?= navActiva('panel', $paginaActiva) ?>" href="panel.php"><i class="bi bi-grid-fill"></i> Panel Principal</a>
       <a class="nav-link <?= navActiva('reciclaje', $paginaActiva) ?>" href="registro-reciclaje.php"><i class="bi bi-recycle"></i> Registrar reciclaje</a>
       <a class="nav-link <?= navActiva('huella', $paginaActiva) ?>" href="huella-carbono.php"><i class="bi bi-cloud"></i> Huella de carbono</a>
-      <a class="nav-link <?= navActiva('acopio', $paginaActiva) ?>" href="CentroAcopio.html"><i class="bi bi-geo-alt"></i> Centros de acopio</a>
+      <a class="nav-link <?= navActiva('acopio', $paginaActiva) ?>" href="CentroAcopio.php"><i class="bi bi-geo-alt"></i> Centros de acopio</a>
       <a class="nav-link <?= navActiva('noticias', $paginaActiva) ?>" href="noticias.html"><i class="bi bi-newspaper"></i> Noticias</a>
       <a class="nav-link <?= navActiva('voluntariados', $paginaActiva) ?>" href="voluntariados.html"><i class="bi bi-people"></i> Voluntariados</a>
       <a class="nav-link <?= navActiva('recompensas', $paginaActiva) ?>" href="recompensas.php"><i class="bi bi-gift"></i> Recompensas</a>

@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mx-auto gap-2">
         <li class="nav-item"><a class="nav-link" href="panel.php">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="CentroAcopio.html">Centro de acopio</a></li>
+        <li class="nav-item"><a class="nav-link" href="CentroAcopio.php">Centro de acopio</a></li>
         <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
         <li class="nav-item"><a class="nav-link" href="voluntariados.html">Voluntariados</a></li>
         <li class="nav-item"><a class="nav-link" href="recompensas.php">Recompensas</a></li>
