@@ -74,12 +74,12 @@ $paginaActiva = 'perfil';
   </section>
 
   <section class="perfil-opciones">
-    <a href="#" class="perfil-opcion">
+    <a href="historial-acciones.php" class="perfil-opcion">
       <div><i class="bi bi-file-earmark-text"></i><span>Historial de acciones</span></div>
       <i class="bi bi-chevron-right"></i>
     </a>
 
-    <a href="#" class="perfil-opcion">
+    <a href="cupones-obtenidos.php" class="perfil-opcion">
       <div><i class="bi bi-ticket-perforated-fill"></i><span>Cupones obtenidos</span></div>
       <i class="bi bi-chevron-right"></i>
     </a>

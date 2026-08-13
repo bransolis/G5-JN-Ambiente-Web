@@ -5,13 +5,12 @@ requerirLogin();
 $usuario = usuarioActual();
 $paginaActiva = 'configuracion';
 
-// Cargar preferencias actuales
 $pdo = conectarDB();
 $stmt = $pdo->prepare('SELECT * FROM configuracion_usuario WHERE usuario_id = :id');
 $stmt->execute(['id' => $usuario['id']]);
 $config = $stmt->fetch();
 if (!$config) {
-    // Por si el usuario se creó antes de existir esta tabla
+
     $pdo->prepare('INSERT INTO configuracion_usuario (usuario_id) VALUES (:id)')->execute(['id' => $usuario['id']]);
     $stmt->execute(['id' => $usuario['id']]);
     $config = $stmt->fetch();

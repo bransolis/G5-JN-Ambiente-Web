@@ -20,7 +20,6 @@ function enviarCanjeServidor(nombreEmpresa, puntosConsumidos, boton) {
       if (respuesta.status === "success") {
         $exito.text("¡Cupón de " + nombreEmpresa + " canjeado! Código: " + respuesta.codigo).removeClass("d-none");
 
-        // Actualiza el contador de puntos visibles sin recargar la página
         const $puntos = $("#puntosDisponibles");
         const puntosActuales = parseInt($puntos.text().replace(/\D/g, ""), 10) || 0;
         $puntos.text((puntosActuales - puntosConsumidos).toLocaleString());
